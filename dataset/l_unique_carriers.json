@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
-			"name": "datasets_kcl"
+			"name": "100_STG_katrien"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
