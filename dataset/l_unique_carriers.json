@@ -1,0 +1,32 @@
+{
+	"name": "l_unique_carriers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "connection_db_katrien",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "100_STG_katrien"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "code",
+				"type": "varchar"
+			},
+			{
+				"name": "description",
+				"type": "varchar"
+			},
+			{
+				"name": "initial_source",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "staging_katrien",
+			"table": "l_unique_carriers"
+		}
+	}
+}
