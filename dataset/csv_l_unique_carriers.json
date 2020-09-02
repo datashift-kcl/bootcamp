@@ -1,5 +1,5 @@
 {
-	"name": "l_unique_carriers",
+	"name": "csv_l_unique_carriers",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "BootcampBlobStorage",
