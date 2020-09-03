@@ -15,8 +15,436 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableStaging": false
-				}
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"wildcardFileName": "onetime.*"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"sink": {
+									"name": "year",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "QUARTER",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "MONTH",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DAY_OF_MONTH",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DAY_OF_WEEK",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "FL_DATE",
+									"type": "DateTime",
+									"physicalType": "date"
+								}
+							},
+							{
+								"sink": {
+									"name": "OP_UNIQUE_CARRIER",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "OP_CARRIER_AIRLINE_ID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "OP_CARRIER",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "TAIL_NUM",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "OP_CARRIER_FL_NUM",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_AIRPORT_ID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_AIRPORT_SEQ_ID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_CITY_MARKET_ID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_CITY_NAME",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_STATE_ABR",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_STATE_FIPS",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_STATE_NM",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_WAC",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_AIRPORT_ID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_AIRPORT_SEQ_ID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_CITY_MARKET_ID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_CITY_NAME",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_STATE_ABR",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_STATE_FIPS",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_STATE_NM",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_WAC",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "CRS_DEP_TIME",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_TIME",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_DELAY",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_DELAY_NEW",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_DEL15",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_DELAY_GROUP",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_TIME_BLK",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "TAXI_OUT",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "WHEELS_OFF",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "WHEELS_ON",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "TAXI_IN",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "CRS_ARR_TIME",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_TIME",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_DELAY",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_DELAY_NEW",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_DEL15",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_DELAY_GROUP",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_TIME_BLK",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "CANCELLED",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "CANCELLATION_CODE",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "DIVERTED",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "CRS_ELAPSED_TIME",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "ACTUAL_ELAPSED_TIME",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "AIR_TIME",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "FLIGHTS",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DISTANCE",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "DISTANCE_GROUP",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "100_all_file",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "101_t_ontime_reporting_table",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
