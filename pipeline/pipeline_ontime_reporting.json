@@ -20,7 +20,7 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": "onetime.*"
+							"wildcardFileName": "ONETIME.*"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
@@ -435,7 +435,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "100_all_file",
+						"referenceName": "100_all_files",
 						"type": "DatasetReference"
 					}
 				],
