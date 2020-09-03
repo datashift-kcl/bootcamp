@@ -31,6 +31,392 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "AIRPORT_SEQ_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_seq_id",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_id",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DISPLAY_AIRPORT_NAME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "display_airport_name",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DISPLAY_AIRPORT_CITY_NAME_FULL",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "display_airport_city_name_full",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_WAC_SEQ_ID2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_wac_seq_id2",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_WAC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_wac",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_COUNTRY_NAME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_country_name",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_COUNTRY_CODE_ISO",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_country_code_iso",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_STATE_NAME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_state_name",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_STATE_CODE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_state_code",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_STATE_FIPS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_state_fips",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "CITY_MARKET_SEQ_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "city_market_seq_id",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "CITY_MARKET_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "city_market_id",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DISPLAY_CITY_MARKET_NAME_FULL",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dispplay_city_market_name_full",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CITY_MARKET_WAC_SEQ_ID2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "city_market_wac_seq_id2",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "CITY_MARKET_WAC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "city_market_wac",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "LAT_DEGREES",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lat_degrees",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "LAT_HEMISPHERE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lat_hemisphere",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "LAT_MINUTES",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lat_minutes",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "LAT_SECONDS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lat_seconds",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "LATITUDE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "latitude",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "LON_DEGREES",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lon_degrees",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "LON_HEMISPHERE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lon_hemisphere",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "LON_MINUTES",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lon_minutes",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "LON_SECONDS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lon_seconds",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "LONGITUDE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "longitude",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "UTC_LOCAL_TIME_VARIATION",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "utc_local_time_variation",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_START_DATE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_start_date",
+									"type": "DateTime",
+									"physicalType": "date"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_THRU_DATE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_thru_date",
+									"type": "DateTime",
+									"physicalType": "date"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_IS_CLOSED",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airport_is_closed",
+									"type": "Boolean",
+									"physicalType": "bit"
+								}
+							},
+							{
+								"source": {
+									"name": "AIRPORT_IS_LATEST",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "airports_is_latest",
+									"type": "Boolean",
+									"physicalType": "bit"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
