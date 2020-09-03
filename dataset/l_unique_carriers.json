@@ -1,0 +1,25 @@
+{
+	"name": "l_unique_carriers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "code",
+				"type": "varchar"
+			},
+			{
+				"name": "description",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "staging_eline",
+			"table": "l_unique_carriers"
+		}
+	}
+}
