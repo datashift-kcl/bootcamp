@@ -1,0 +1,25 @@
+{
+	"name": "100_ontime_reporting_4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BootcampBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "100_STG_thomas"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "950256511_T_ONTIME_REPORTING_2019_4.csv",
+				"container": "bootcampblob"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
