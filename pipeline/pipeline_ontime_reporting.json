@@ -20,7 +20,7 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": ".*ONTIME.*"
+							"wildcardFileName": "950256511_T_ONTIME*.csv"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
@@ -34,6 +34,11 @@
 						"type": "TabularTranslator",
 						"mappings": [
 							{
+								"source": {
+									"name": "YEAR",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "year",
 									"type": "Int32",
@@ -41,6 +46,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "QUARTER",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "QUARTER",
 									"type": "Int32",
@@ -48,6 +58,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "MONTH",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "MONTH",
 									"type": "Int32",
@@ -55,6 +70,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DAY_OF_MONTH",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DAY_OF_MONTH",
 									"type": "Int32",
@@ -62,6 +82,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DAY_OF_WEEK",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DAY_OF_WEEK",
 									"type": "Int32",
@@ -69,6 +94,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "FL_DATE",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "FL_DATE",
 									"type": "DateTime",
@@ -76,6 +106,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "OP_UNIQUE_CARRIER",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "OP_UNIQUE_CARRIER",
 									"type": "String",
@@ -83,6 +118,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "OP_CARRIER_AIRLINE_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "OP_CARRIER_AIRLINE_ID",
 									"type": "Int32",
@@ -90,6 +130,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "OP_CARRIER",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "OP_CARRIER",
 									"type": "String",
@@ -97,6 +142,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "TAIL_NUM",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "TAIL_NUM",
 									"type": "String",
@@ -104,6 +154,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "OP_CARRIER_FL_NUM",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "OP_CARRIER_FL_NUM",
 									"type": "Int32",
@@ -111,6 +166,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ORIGIN_AIRPORT_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ORIGIN_AIRPORT_ID",
 									"type": "Int32",
@@ -118,6 +178,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ORIGIN_AIRPORT_SEQ_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ORIGIN_AIRPORT_SEQ_ID",
 									"type": "Int32",
@@ -125,6 +190,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ORIGIN_CITY_MARKET_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ORIGIN_CITY_MARKET_ID",
 									"type": "Int32",
@@ -132,6 +202,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ORIGIN",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ORIGIN",
 									"type": "String",
@@ -139,6 +214,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ORIGIN_CITY_NAME",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ORIGIN_CITY_NAME",
 									"type": "String",
@@ -146,6 +226,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ORIGIN_STATE_ABR",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ORIGIN_STATE_ABR",
 									"type": "String",
@@ -153,6 +238,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ORIGIN_STATE_FIPS",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ORIGIN_STATE_FIPS",
 									"type": "Int32",
@@ -160,6 +250,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ORIGIN_STATE_NM",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ORIGIN_STATE_NM",
 									"type": "String",
@@ -167,6 +262,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ORIGIN_WAC",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ORIGIN_WAC",
 									"type": "Int32",
@@ -174,6 +274,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEST_AIRPORT_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEST_AIRPORT_ID",
 									"type": "Int32",
@@ -181,6 +286,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEST_AIRPORT_SEQ_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEST_AIRPORT_SEQ_ID",
 									"type": "Int32",
@@ -188,6 +298,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEST_CITY_MARKET_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEST_CITY_MARKET_ID",
 									"type": "Int32",
@@ -195,6 +310,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEST",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEST",
 									"type": "String",
@@ -202,6 +322,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEST_CITY_NAME",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEST_CITY_NAME",
 									"type": "String",
@@ -209,6 +334,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEST_STATE_ABR",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEST_STATE_ABR",
 									"type": "String",
@@ -216,6 +346,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEST_STATE_FIPS",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEST_STATE_FIPS",
 									"type": "Int32",
@@ -223,6 +358,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEST_STATE_NM",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEST_STATE_NM",
 									"type": "String",
@@ -230,6 +370,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEST_WAC",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEST_WAC",
 									"type": "Int32",
@@ -237,6 +382,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "CRS_DEP_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "CRS_DEP_TIME",
 									"type": "Int32",
@@ -244,6 +394,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEP_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEP_TIME",
 									"type": "Int32",
@@ -251,6 +406,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEP_DELAY",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEP_DELAY",
 									"type": "Int32",
@@ -258,6 +418,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEP_DELAY_NEW",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEP_DELAY_NEW",
 									"type": "Int32",
@@ -265,6 +430,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEP_DEL15",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEP_DEL15",
 									"type": "Int32",
@@ -272,6 +442,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEP_DELAY_GROUP",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEP_DELAY_GROUP",
 									"type": "Int32",
@@ -279,6 +454,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DEP_TIME_BLK",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DEP_TIME_BLK",
 									"type": "String",
@@ -286,6 +466,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "TAXI_OUT",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "TAXI_OUT",
 									"type": "Int32",
@@ -293,6 +478,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "WHEELS_OFF",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "WHEELS_OFF",
 									"type": "Int32",
@@ -300,6 +490,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "WHEELS_ON",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "WHEELS_ON",
 									"type": "Int32",
@@ -307,6 +502,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "TAXI_IN",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "TAXI_IN",
 									"type": "Int32",
@@ -314,6 +514,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "CRS_ARR_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "CRS_ARR_TIME",
 									"type": "Int32",
@@ -321,6 +526,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ARR_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ARR_TIME",
 									"type": "Int32",
@@ -328,6 +538,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ARR_DELAY",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ARR_DELAY",
 									"type": "Int32",
@@ -335,6 +550,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ARR_DELAY_NEW",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ARR_DELAY_NEW",
 									"type": "Int32",
@@ -342,6 +562,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ARR_DEL15",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ARR_DEL15",
 									"type": "Int32",
@@ -349,6 +574,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ARR_DELAY_GROUP",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ARR_DELAY_GROUP",
 									"type": "Int32",
@@ -356,6 +586,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ARR_TIME_BLK",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ARR_TIME_BLK",
 									"type": "String",
@@ -363,6 +598,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "CANCELLED",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "CANCELLED",
 									"type": "Int32",
@@ -370,6 +610,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "CANCELLATION_CODE",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "CANCELLATION_CODE",
 									"type": "String",
@@ -377,6 +622,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DIVERTED",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DIVERTED",
 									"type": "Int32",
@@ -384,6 +634,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "CRS_ELAPSED_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "CRS_ELAPSED_TIME",
 									"type": "Int32",
@@ -391,6 +646,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "ACTUAL_ELAPSED_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "ACTUAL_ELAPSED_TIME",
 									"type": "Int32",
@@ -398,6 +658,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "AIR_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "AIR_TIME",
 									"type": "Int32",
@@ -405,6 +670,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "FLIGHTS",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "FLIGHTS",
 									"type": "Int32",
@@ -412,6 +682,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DISTANCE",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DISTANCE",
 									"type": "Int32",
@@ -419,6 +694,11 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DISTANCE_GROUP",
+									"type": "String",
+									"physicalType": "String"
+								},
 								"sink": {
 									"name": "DISTANCE_GROUP",
 									"type": "Int32",
