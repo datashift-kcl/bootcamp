@@ -367,13 +367,6 @@
 									"type": "Int32",
 									"physicalType": "int"
 								}
-							},
-							{
-								"sink": {
-									"name": "airport_state_date",
-									"type": "DateTime",
-									"physicalType": "date"
-								}
 							}
 						],
 						"typeConversion": true,
