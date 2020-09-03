@@ -23,99 +23,131 @@
 		},
 		"schema": [
 			{
+				"name": "AIRPORT_SEQ_ID",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_ID",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT",
 				"type": "String"
 			},
 			{
+				"name": "DISPLAY_AIRPORT_NAME",
 				"type": "String"
 			},
 			{
+				"name": "DISPLAY_AIRPORT_CITY_NAME_FULL",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_WAC_SEQ_ID2",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_WAC",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_COUNTRY_NAME",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_COUNTRY_CODE_ISO",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_STATE_NAME",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_STATE_CODE",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_STATE_FIPS",
 				"type": "String"
 			},
 			{
+				"name": "CITY_MARKET_SEQ_ID",
 				"type": "String"
 			},
 			{
+				"name": "CITY_MARKET_ID",
 				"type": "String"
 			},
 			{
+				"name": "DISPLAY_CITY_MARKET_NAME_FULL",
 				"type": "String"
 			},
 			{
+				"name": "CITY_MARKET_WAC_SEQ_ID2",
 				"type": "String"
 			},
 			{
+				"name": "CITY_MARKET_WAC",
 				"type": "String"
 			},
 			{
+				"name": "LAT_DEGREES",
 				"type": "String"
 			},
 			{
+				"name": "LAT_HEMISPHERE",
 				"type": "String"
 			},
 			{
+				"name": "LAT_MINUTES",
 				"type": "String"
 			},
 			{
+				"name": "LAT_SECONDS",
 				"type": "String"
 			},
 			{
+				"name": "LATITUDE",
 				"type": "String"
 			},
 			{
+				"name": "LON_DEGREES",
 				"type": "String"
 			},
 			{
+				"name": "LON_HEMISPHERE",
 				"type": "String"
 			},
 			{
+				"name": "LON_MINUTES",
 				"type": "String"
 			},
 			{
+				"name": "LON_SECONDS",
 				"type": "String"
 			},
 			{
+				"name": "LONGITUDE",
 				"type": "String"
 			},
 			{
+				"name": "UTC_LOCAL_TIME_VARIATION",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_START_DATE",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_THRU_DATE",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_IS_CLOSED",
 				"type": "String"
 			},
 			{
+				"name": "AIRPORT_IS_LATEST",
 				"type": "String"
 			}
 		]
