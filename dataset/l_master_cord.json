@@ -12,150 +12,150 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "airport_seq_id",
+				"name": "AIRPORT_SEQ_ID",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "airport_id",
+				"name": "AIRPORT_ID",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "airport",
+				"name": "AIRPORT",
 				"type": "varchar"
 			},
 			{
-				"name": "display_airport_name",
+				"name": "DISPLAY_AIRPORT_NAME",
 				"type": "varchar"
 			},
 			{
-				"name": "display_airport_city_name_full",
+				"name": "DISPLAY_AIRPORT_CITY_NAME_FULL",
 				"type": "varchar"
 			},
 			{
-				"name": "airport_wac_seq_id2",
+				"name": "AIRPORT_WAC_SEQ_ID2",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "airport_wac",
+				"name": "AIRPORT_WAC",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "airport_country_name",
+				"name": "AIRPORT_COUNTRY_NAME",
 				"type": "varchar"
 			},
 			{
-				"name": "airport_country_code_iso",
+				"name": "AIRPORT_COUNTRY_CODE_ISO",
 				"type": "varchar"
 			},
 			{
-				"name": "airport_state_name",
+				"name": "AIRPORT_STATE_NAME",
 				"type": "varchar"
 			},
 			{
-				"name": "airport_state_code",
+				"name": "AIRPORT_STATE_CODE",
 				"type": "varchar"
 			},
 			{
-				"name": "airport_state_fips",
+				"name": "AIRPORT_STATE_FIPS",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "city_market_seq_id",
+				"name": "CITY_MARKET_SEQ_ID",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "city_market_id",
+				"name": "CITY_MARKET_ID",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "dispplay_city_market_name_full",
+				"name": "DISPLAY_CITY_MARKET_NAME_FULL",
 				"type": "varchar"
 			},
 			{
-				"name": "city_market_wac_seq_id2",
+				"name": "CITY_MARKET_WAC_SEQ_ID2",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "city_market_wac",
+				"name": "CITY_MARKET_WAC",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "lat_degrees",
+				"name": "LAT_DEGREES",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "lat_hemisphere",
+				"name": "LAT_HEMISPHERE",
 				"type": "varchar"
 			},
 			{
-				"name": "lat_minutes",
+				"name": "LAT_MINUTES",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "lat_seconds",
+				"name": "LAT_SECONDS",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "latitude",
-				"type": "int",
-				"precision": 10
-			},
-			{
-				"name": "lon_degrees",
-				"type": "int",
-				"precision": 10
-			},
-			{
-				"name": "lon_hemisphere",
+				"name": "LATITUDE",
 				"type": "varchar"
 			},
 			{
-				"name": "lon_minutes",
+				"name": "LON_DEGREES",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "lon_seconds",
+				"name": "LON_HEMISPHERE",
+				"type": "varchar"
+			},
+			{
+				"name": "LON_MINUTES",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "longitude",
+				"name": "LON_SECONDS",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "utc_local_time_variation",
+				"name": "LONGITUDE",
+				"type": "varchar"
+			},
+			{
+				"name": "UTC_LOCAL_TIME_VARIATION",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "airport_start_date",
+				"name": "AIRPORT_START_DATE",
 				"type": "date"
 			},
 			{
-				"name": "airport_thru_date",
+				"name": "AIRPORT_THRU_DATE",
 				"type": "date"
 			},
 			{
-				"name": "airport_is_closed",
-				"type": "bit"
+				"name": "AIRPORT_IS_CLOSED",
+				"type": "int",
+				"precision": 10
 			},
 			{
-				"name": "airports_is_latest",
-				"type": "bit"
+				"name": "AIRPORT_IS_LATEST",
+				"type": "int",
+				"precision": 10
 			}
 		],
 		"typeProperties": {
