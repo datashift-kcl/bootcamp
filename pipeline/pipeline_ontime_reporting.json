@@ -20,7 +20,7 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": ".*ontime.*"
+							"wildcardFileName": ".*ONTIME.*"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
