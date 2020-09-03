@@ -1,0 +1,19 @@
+{
+	"name": "101_t_ontime_reporting_table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DataengineeringOefening",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "100_STG_thomas"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "staging_thomas",
+			"table": "t_ontime_reporting_2019"
+		}
+	}
+}
