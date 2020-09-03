@@ -47,8 +47,7 @@
 			},
 			{
 				"name": "OP_CARRIER",
-				"type": "int",
-				"precision": 10
+				"type": "varchar"
 			},
 			{
 				"name": "TAIL_NUM",
