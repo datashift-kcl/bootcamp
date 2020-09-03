@@ -1,5 +1,5 @@
 {
-	"name": "101_master_cord_all_all",
+	"name": "101_master_cord_all_all_table",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "DataengineeringOefening",
