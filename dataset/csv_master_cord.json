@@ -1,0 +1,29 @@
+{
+	"name": "csv_master_cord",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BootcampBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "100_STG_katrien"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "950256511_T_MASTER_CORD_All_All_V2.csv",
+				"container": "bootcampblob"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			}
+		]
+	}
+}
