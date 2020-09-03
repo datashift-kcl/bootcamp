@@ -16,8 +16,9 @@
 				"fileName": "950256511_T_MASTER_CORD_All_All_V2.csv",
 				"container": "bootcampblob"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": ";",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
