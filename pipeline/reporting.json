@@ -1,0 +1,720 @@
+{
+	"name": "reporting",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*ONTIME*.csv"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "YEAR",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "year",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "QUARTER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "quarter",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "MONTH",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "month",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DAY_OF_MONTH",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "day_of_month",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DAY_OF_WEEK",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "day_of_week",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "FL_DATE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "fl_date",
+									"type": "DateTime",
+									"physicalType": "date"
+								}
+							},
+							{
+								"source": {
+									"name": "OP_UNIQUE_CARRIER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "op_unique_carrier",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "OP_CARRIER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "op_carrier",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "TAIL_NUM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tail_num",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "OP_CARRIER_FL_NUM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "op_carrier_fl_num",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ORIGIN_AIRPORT_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_airport_id",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ORIGIN_AIRPORT_SEQ_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_airport_seq_id",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ORIGIN_CITY_MARKET_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_city_market_id",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ORIGIN",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ORIGIN_CITY_NAME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_city_name",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ORIGIN_STATE_ABR",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_state_abr",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ORIGIN_STATE_FIPS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_state_fips",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ORIGIN_STATE_NM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_state_nm",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ORIGIN_WAC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "origin_wac",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DEST_AIRPORT_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dest_airport_id",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DEST_AIRPORT_SEQ_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dest_airport_seq_id",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ORIGIN_CITY_MARKET_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dest_city_market_di",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DEST",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dest",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DEST_CITY_NAME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dest_city_name",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DEST_STATE_ABR",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dest_state_abr",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DEST_STATE_FIPS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dest_state_fips",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DEST_STATE_NM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dest_state_nm",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "DEST_WAC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dest_wac",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "CRS_DEP_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "crs_dep_time",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DEP_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dep_time",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DEP_DELAY",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dep_delay",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DEP_DELAY_NEW",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dep_delay_new",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DEP_DEL15",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dep_del15",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DEP_DELAY_GROUP",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dep_delay_group",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DEP_TIME_BLK",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "dep_time_blk",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "TAXI_OUT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "taxi_out",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "WHEELS_OFF",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "wheels_off",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "WHEELS_ON",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "wheels_on",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "TAXI_IN",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "taxi_in",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "CRS_ARR_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "crs_arr_time",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ARR_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "arr_time",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ARR_DELAY",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "arr_delay",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ARR_DELAY_NEW",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "arr_delay_new",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ARR_DEL15",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "arr_del15",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ARR_DELAY_GROUP",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "arr_delay_group",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ARR_TIME_BLK",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "arr_time_blk",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CANCELLED",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cancelled",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "CANCELLATION_CODE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "cancellation_code",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DIVERTED",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "diverted",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "CRS_ELAPSED_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "crs_elapsed_time",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "ACTUAL_ELAPSED_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "actual_elapsed_time",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "AIR_TIME",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "air_time",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "FLIGHTS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "flights",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DISTANCE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "distance",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "DISTANCE_GROUP",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "distance_group",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "100_l_reporting",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "staging_reporting",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
