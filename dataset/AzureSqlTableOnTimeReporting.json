@@ -174,8 +174,7 @@
 			},
 			{
 				"name": "TAXI_OUT",
-				"type": "time",
-				"scale": 7
+				"type": "varchar"
 			},
 			{
 				"name": "WHEELS_OFF",
