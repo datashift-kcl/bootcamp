@@ -5,6 +5,9 @@
 			"referenceName": "BootcampBlobStorage",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "100_STG_wouter"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

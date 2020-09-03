@@ -1,0 +1,286 @@
+{
+	"name": "staging_reporting",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "100_STG_wouter"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "quarter",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "month",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "day_of_month",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "day_of_week",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "fl_date",
+				"type": "date"
+			},
+			{
+				"name": "op_unique_carrier",
+				"type": "varchar"
+			},
+			{
+				"name": "op_unique_carrier_airline_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "op_carrier",
+				"type": "varchar"
+			},
+			{
+				"name": "tail_num",
+				"type": "varchar"
+			},
+			{
+				"name": "op_carrier_fl_num",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "origin_airport_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "origin_airport_seq_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "origin_city_market_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "origin",
+				"type": "varchar"
+			},
+			{
+				"name": "origin_city_name",
+				"type": "varchar"
+			},
+			{
+				"name": "origin_state_abr",
+				"type": "varchar"
+			},
+			{
+				"name": "origin_state_fips",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "origin_state_nm",
+				"type": "varchar"
+			},
+			{
+				"name": "origin_wac",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dest_airport_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dest_airport_seq_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dest_city_market_di",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dest",
+				"type": "varchar"
+			},
+			{
+				"name": "dest_city_name",
+				"type": "varchar"
+			},
+			{
+				"name": "dest_state_abr",
+				"type": "varchar"
+			},
+			{
+				"name": "dest_state_fips",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dest_state_nm",
+				"type": "varchar"
+			},
+			{
+				"name": "dest_wac",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "crs_dep_time",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dep_time",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dep_delay",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dep_delay_new",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dep_del15",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dep_delay_group",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dep_time_blk",
+				"type": "varchar"
+			},
+			{
+				"name": "taxi_out",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "wheels_off",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "wheels_on",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "taxi_in",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "crs_arr_time",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "arr_time",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "arr_delay",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "arr_delay_new",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "arr_del15",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "arr_delay_group",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "arr_time_blk",
+				"type": "varchar"
+			},
+			{
+				"name": "cancelled",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "cancellation_code",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "diverted",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "crs_elapsed_time",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "actual_elapsed_time",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "air_time",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "flights",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "distance",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "distance_group",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "staging_wouter",
+			"table": "l_reporting1"
+		}
+	}
+}
