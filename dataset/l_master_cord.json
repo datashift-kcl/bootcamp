@@ -1,0 +1,151 @@
+{
+	"name": "l_master_cord",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "AIRPORT_SEQ_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT",
+				"type": "varchar"
+			},
+			{
+				"name": "DISPLAY_AIRPORT_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "DISPLAY_AIRPORT_CITY_NAME_FULL",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT_WAC_SEQ_ID2",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT_WAC",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT_COUNTRY_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT_COUNTRY_CODE_ISO",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT_STATE_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT_STATE_CODE",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT_STATE_FIPS",
+				"type": "varchar"
+			},
+			{
+				"name": "CITY_MARKET_SEQ_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "CITY_MARKET_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "DISPLAY_CITY_MARKET_NAME_FULL",
+				"type": "varchar"
+			},
+			{
+				"name": "CITY_MARKET_WAC_SEQ_ID2",
+				"type": "varchar"
+			},
+			{
+				"name": "CITY_MARKET_WAC",
+				"type": "varchar"
+			},
+			{
+				"name": "LAT_DEGREES",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LAT_HEMISPHERE",
+				"type": "varchar"
+			},
+			{
+				"name": "LAT_MINUTES",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LAT_SECONDS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LATITUDE",
+				"type": "varchar"
+			},
+			{
+				"name": "LON_DEGREES",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LON_HEMISPHERE",
+				"type": "varchar"
+			},
+			{
+				"name": "LON_MINUTES",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LON_SECONDS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LONGITUDE",
+				"type": "varchar"
+			},
+			{
+				"name": "UTC_LOCAL_TIME_VARIATION",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT_START_DATE",
+				"type": "date"
+			},
+			{
+				"name": "AIRPORT_THRU_DATE",
+				"type": "date"
+			},
+			{
+				"name": "AIRPORT_IS_CLOSED",
+				"type": "varchar"
+			},
+			{
+				"name": "AIRPORT_IS_LATEST",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "staging_eline",
+			"table": "l_t_master_cord"
+		}
+	}
+}
