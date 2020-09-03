@@ -1,0 +1,25 @@
+{
+	"name": "AzureSqlTableUniqueCarriers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1BootcampDenis",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CODE",
+				"type": "varchar"
+			},
+			{
+				"name": "DESCRIPTION",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "staging_denis",
+			"table": "l_unique_carriers"
+		}
+	}
+}
