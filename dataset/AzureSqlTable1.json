@@ -1,0 +1,166 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DataengineeringOefening",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "100_STG_thomas"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "airport_seq_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "airport_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "airport",
+				"type": "varchar"
+			},
+			{
+				"name": "display_airport_name",
+				"type": "varchar"
+			},
+			{
+				"name": "display_airport_city_name_full",
+				"type": "varchar"
+			},
+			{
+				"name": "airport_wac_seq_id2",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "airport_wac",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "airport_country_name",
+				"type": "varchar"
+			},
+			{
+				"name": "airport_country_code_iso",
+				"type": "varchar"
+			},
+			{
+				"name": "airport_state_name",
+				"type": "varchar"
+			},
+			{
+				"name": "airport_state_code",
+				"type": "varchar"
+			},
+			{
+				"name": "airport_state_fips",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "city_market_seq_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "city_market_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "display_city_market_name_full",
+				"type": "varchar"
+			},
+			{
+				"name": "city_market_wac_seq_id2",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "city_market_wac",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "lat_degrees",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "lat_hemisphere",
+				"type": "varchar"
+			},
+			{
+				"name": "lat_minutes",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "lat_seconds",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "latitude",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "lon_degrees",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "lon_hemisphere",
+				"type": "varchar"
+			},
+			{
+				"name": "lon_minutes",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "lon_seconds",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "longitude",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "utc_local_time_variation",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "airport_start_date",
+				"type": "date"
+			},
+			{
+				"name": "airport_thru_date",
+				"type": "date"
+			},
+			{
+				"name": "airport_is_closed",
+				"type": "bit"
+			},
+			{
+				"name": "airport_is_latest",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "staging_thomas",
+			"table": "t_master_cord_all_all"
+		}
+	}
+}
