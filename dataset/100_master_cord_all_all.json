@@ -1,0 +1,25 @@
+{
+	"name": "100_master_cord_all_all",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BootcampBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "100_STG_thomas"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "950256511_T_MASTER_CORD_All_All_V2.csv",
+				"container": "bootcampblob"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
