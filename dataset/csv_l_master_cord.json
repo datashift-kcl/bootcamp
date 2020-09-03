@@ -1,5 +1,5 @@
 {
-	"name": "csv_master_cord",
+	"name": "csv_l_master_cord",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "BootcampBlobStorage",
