@@ -1258,6 +1258,491 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "wild",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"wildcardFileName": "950256511_T_ON"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings",
+							"copyBehavior": "MergeFiles"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"sink": {
+									"name": "YEAR",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "QUARTER",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "MONTH",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DAY_OF_MONTH",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DAY_OF_WEEK",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "FL_DATE",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "OP_UNIQUE_CARRIER",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "OP_CARRIER_AIRLINE_ID",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "OP_CARRIER",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "TAIL_NUM",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "OP_CARRIER_FL_NUM",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_AIRPORT_ID",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_AIRPORT_SEQ_ID",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_CITY_MARKET_ID",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_CITY_NAME",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_STATE_ABR",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_STATE_FIPS",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_STATE_NM",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ORIGIN_WAC",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_AIRPORT_ID",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_AIRPORT_SEQ_ID",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_CITY_MARKET_ID",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_CITY_NAME",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_STATE_ABR",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_STATE_FIPS",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_STATE_NM",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEST_WAC",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "CRS_DEP_TIME",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_TIME",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_DELAY",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_DELAY_NEW",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_DEL15",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_DELAY_GROUP",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DEP_TIME_BLK",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "TAXI_OUT",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "WHEELS_OFF",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "WHEELS_ON",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "TAXI_IN",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "CRS_ARR_TIME",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_TIME",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_DELAY",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_DELAY_NEW",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_DEL15",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_DELAY_GROUP",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ARR_TIME_BLK",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "CANCELLED",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "CANCELLATION_CODE",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DIVERTED",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "CRS_ELAPSED_TIME",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "ACTUAL_ELAPSED_TIME",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "AIR_TIME",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "FLIGHTS",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DISTANCE",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"sink": {
+									"name": "DISTANCE_GROUP",
+									"type": "String",
+									"physicalType": "String"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "ontime_reporting_1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ontime_reporting_1",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "ontime_reporting_1",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
