@@ -16,7 +16,7 @@
 				"fileName": "950256511_T_ONTIME_REPORTING_2019_4.csv",
 				"container": "bootcampblob"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": ";",
 			"escapeChar": "\\",
 			"quoteChar": "\""
 		},
