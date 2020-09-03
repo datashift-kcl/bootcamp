@@ -1,0 +1,268 @@
+{
+	"name": "l_ontime_reporting",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "YEAR",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "QUARTER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MONTH",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DAY_OF_MONTH",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DAY_OF_WEEK",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "FL_DATE",
+				"type": "date"
+			},
+			{
+				"name": "OP_UNIQUE_CARRIER",
+				"type": "varchar"
+			},
+			{
+				"name": "OP_CARRIER_AIRLINE_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "OP_CARRIER",
+				"type": "varchar"
+			},
+			{
+				"name": "TAIL_NUM",
+				"type": "varchar"
+			},
+			{
+				"name": "OP_CARRIER_FL_NUM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ORIGIN_AIRPORT_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "ORIGIN_AIRPORT_SEQ_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "ORIGIN_CITY_MARKET_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "ORIGIN",
+				"type": "varchar"
+			},
+			{
+				"name": "ORIGIN_CITY_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "ORIGIN_STATE_ABR",
+				"type": "varchar"
+			},
+			{
+				"name": "ORIGIN_STATE_FIPS",
+				"type": "varchar"
+			},
+			{
+				"name": "ORIGIN_STATE_NM",
+				"type": "varchar"
+			},
+			{
+				"name": "ORIGIN_WAC",
+				"type": "varchar"
+			},
+			{
+				"name": "DEST_AIRPORT_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "DEST_AIRPORT_SEQ_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "DEST_CITY_MARKET_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "DEST",
+				"type": "varchar"
+			},
+			{
+				"name": "DEST_CITY_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "DEST_STATE_ABR",
+				"type": "varchar"
+			},
+			{
+				"name": "DEST_STATE_FIPS",
+				"type": "varchar"
+			},
+			{
+				"name": "DEST_STATE_NM",
+				"type": "varchar"
+			},
+			{
+				"name": "DEST_WAC",
+				"type": "varchar"
+			},
+			{
+				"name": "CRS_DEP_TIME",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "DEP_TIME",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "DEP_DELAY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DEP_DELAY_NEW",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DEP_DEL15",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DEP_DELAY_GROUP",
+				"type": "varchar"
+			},
+			{
+				"name": "DEP_TIME_BLK",
+				"type": "varchar"
+			},
+			{
+				"name": "TAXI_OUT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "WHEELS_OFF",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "WHEELS_ON",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TAXI_IN",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CRS_ARR_TIME",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "ARR_TIME",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "ARR_DELAY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ARR_DELAY_NEW",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ARR_DEL15",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ARR_DELAY_GROUP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ARR_TIME_BLK",
+				"type": "varchar"
+			},
+			{
+				"name": "CANCELLED",
+				"type": "varchar"
+			},
+			{
+				"name": "CANCELLATION_CODE",
+				"type": "varchar"
+			},
+			{
+				"name": "DIVERTED",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CRS_ELAPSED_TIME",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "ACTUAL_ELAPSED_TIME",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "AIR_TIME",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "FLIGHTS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DISTANCE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DISTANCE_GROUP",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "staging_eline",
+			"table": "l_t_ontime_reporting"
+		}
+	}
+}
