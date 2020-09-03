@@ -35,7 +35,7 @@
 							{
 								"source": {
 									"name": "AIRPORT_THRU_DATE",
-									"type": "String",
+									"type": "DateTime",
 									"physicalType": "String"
 								},
 								"sink": {
