@@ -152,8 +152,7 @@
 			},
 			{
 				"name": "DEP_DELAY",
-				"type": "time",
-				"scale": 7
+				"type": "varchar"
 			},
 			{
 				"name": "DEP_DELAY_NEW",
