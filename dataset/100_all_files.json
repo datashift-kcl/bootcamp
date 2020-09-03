@@ -1,5 +1,5 @@
 {
-	"name": "100_all_file",
+	"name": "100_all_files",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "BootcampBlobStorage",
