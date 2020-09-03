@@ -1,0 +1,15 @@
+{
+	"name": "101_unique_carriers_table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DataengineeringOefening",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "100_STG_thomas"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
