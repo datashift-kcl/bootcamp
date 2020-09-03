@@ -287,18 +287,6 @@
 							},
 							{
 								"source": {
-									"name": "ORIGIN_CITY_MARKET_ID",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "dest_city_market_di",
-									"type": "Int32",
-									"physicalType": "int"
-								}
-							},
-							{
-								"source": {
 									"name": "DEST",
 									"type": "String",
 									"physicalType": "String"
