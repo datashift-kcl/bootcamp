@@ -25,8 +25,8 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "staging_thomas",
-			"table": "l_unique_carriers"
+			"schema": "staging_katrien",
+			"table": "l_ontime_reporting"
 		}
 	}
 }
