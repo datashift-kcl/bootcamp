@@ -16,7 +16,7 @@
 				"fileName": "L_UNIQUE_CARRIERS.csv",
 				"container": "bootcampblob"
 			},
-			"columnDelimiter": ";",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
