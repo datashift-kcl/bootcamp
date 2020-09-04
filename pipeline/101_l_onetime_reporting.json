@@ -26,7 +26,8 @@
 						],
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"recursive": true
+							"recursive": true,
+							"wildcardFileName": "950256511_T_ONTIME*.csv"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
