@@ -38,7 +38,7 @@
 			},
 			{
 				"name": "FL_DATE",
-				"type": "date"
+				"type": "varchar"
 			},
 			{
 				"name": "OP_UNIQUE_CARRIER",
