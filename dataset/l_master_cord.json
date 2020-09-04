@@ -136,7 +136,8 @@
 			},
 			{
 				"name": "UTC_LOCAL_TIME_VARIATION",
-				"type": "varchar"
+				"type": "int",
+				"precision": 10
 			},
 			{
 				"name": "AIRPORT_START_DATE",
