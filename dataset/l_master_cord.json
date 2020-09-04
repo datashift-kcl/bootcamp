@@ -136,8 +136,7 @@
 			},
 			{
 				"name": "UTC_LOCAL_TIME_VARIATION",
-				"type": "int",
-				"precision": 10
+				"type": "varchar"
 			},
 			{
 				"name": "AIRPORT_START_DATE",
@@ -145,7 +144,7 @@
 			},
 			{
 				"name": "AIRPORT_THRU_DATE",
-				"type": "date"
+				"type": "varchar"
 			},
 			{
 				"name": "AIRPORT_IS_CLOSED",
