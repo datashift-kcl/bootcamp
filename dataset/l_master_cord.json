@@ -159,7 +159,7 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "staging_denis",
+			"schema": "staging_wouter",
 			"table": "l_master_cord_all"
 		}
 	}
