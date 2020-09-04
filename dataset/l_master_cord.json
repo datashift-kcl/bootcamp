@@ -159,7 +159,7 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "staging_wouter",
+			"schema": "staging_thomas",
 			"table": "l_master_cord_all"
 		}
 	}
