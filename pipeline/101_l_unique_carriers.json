@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "101_l_unique_carriers",
-				"description": "ik laad de l_unique carriers data in van csv naar de database.",
+				"description": "laad de l_unique carriers data in van csv naar de database.",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
