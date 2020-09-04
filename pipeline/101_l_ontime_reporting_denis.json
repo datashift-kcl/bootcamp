@@ -23,6 +23,8 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
+						"writeBatchSize": 10000,
+						"preCopyScript": "truncate table staging_denis.l_ontime_reporting; ",
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
