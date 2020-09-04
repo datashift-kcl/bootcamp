@@ -366,8 +366,8 @@
 								},
 								"sink": {
 									"name": "UTC_LOCAL_TIME_VARIATION",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
