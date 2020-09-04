@@ -1,5 +1,5 @@
 {
-	"name": "101_l_onetime_reporting",
+	"name": "101_l_ontime_reporting",
 	"properties": {
 		"activities": [
 			{
@@ -86,7 +86,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "csv_onetime_reporting",
+						"referenceName": "csv_ontime_reporting",
 						"type": "DatasetReference"
 					}
 				],
