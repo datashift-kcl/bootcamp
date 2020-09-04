@@ -159,7 +159,7 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "staging_eline",
+			"schema": "staging_katrien",
 			"table": "l_master_cord_all"
 		}
 	}
