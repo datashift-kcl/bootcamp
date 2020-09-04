@@ -158,7 +158,7 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "staging_katrien",
+			"schema": "staging_denis",
 			"table": "l_master_cord_all"
 		}
 	}
