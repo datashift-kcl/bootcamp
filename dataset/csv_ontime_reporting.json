@@ -1,5 +1,5 @@
 {
-	"name": "csv_onetime_reporting",
+	"name": "csv_ontime_reporting",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "BootcampBlobStorage",
